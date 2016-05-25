@@ -12,7 +12,7 @@ if user_data == "add":
     d = str(c)
     a = (colored((d), "green"))
 if user_data == "exit":
-    print (colored("Exiting...", "red"))
+    print (colored("Exiting...", "yellow"))
     exit()
 else:
     print (colored("Error: Wrong command", "red"))
@@ -28,7 +28,7 @@ while user_data == "add" or user_data == "help":
         d = str(c)
         a = (colored((d), "green"))
     elif user_data == "exit":
-        print (colored("Exiting...", "red"))
+        print (colored("Exiting...", "yellow"))
         exit()
     else:
         print (colored("Error: Wrong command", "red"))
