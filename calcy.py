@@ -1,5 +1,7 @@
 from termcolor import colored
 
+import help
+
 def calcy():
     print (colored("Calcy 1.0","blue"))
     print (colored("Type 'help' to view a list of commands.","blue"))
@@ -17,7 +19,8 @@ def calcy():
         exit()
     else:
         print (colored("Error: Wrong command", "red"))
-        calcy.calcy()
+        print (colored("Runtime crashed! Exiting...", "red"))
+        exit()
     while user_data == "add" or user_data == "help":
         user_data = raw_input(colored("$>> ", "cyan"))
         if user_data == "help":
@@ -33,4 +36,5 @@ def calcy():
             exit()
         else:
             print (colored("Error: Wrong command", "red"))
-            calcy.calcy()
+            print (colored("Runtime crashed! Exiting...", "red"))
+            exit()
