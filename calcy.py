@@ -3,8 +3,6 @@ from termcolor import colored
 import help
 
 def calcy():
-    print (colored("Calcy 1.0","blue"))
-    print (colored("Type 'help' to view a list of commands.","blue"))
     user_data = raw_input(colored("$>> ", "cyan"))
     if user_data == "help":
         help.help()
